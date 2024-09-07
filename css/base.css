@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --color-one: #103178;
+    --color-two: #FFC800;
+    --color-three: #5B6C8F;
+    --color-four: #7b93c3;
+    --color-text: #10318D;
+    --font: "Inria Serif", serif;
+    --font-two: "Poppins", sans-serif;
+}
+
+body {
+    font-family: var(--font-two);
+    /* color: var(--color-one) */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Header */
+    div.header-top {
+        font-size: 14px;
+        /* Giảm kích thước font cho header trên thiết bị di động */
+        padding: 10px;
+    }
+    /* Main Header */
+    div.header-main {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    div.header-main div.inner-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    div.header-main div.inner-menu ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    div.header-main div.inner-menu ul li {
+        margin: 5px 0;
+    }
+    /* Slide */
+    .slide {
+        width: 100%;
+        transform: translateX(-100%);
+    }
+    /* Slider */
+    .slider {
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    .slider img {
+        height: auto;
+    }
+    /* Banner */
+    #banner {
+        height: auto;
+        padding: 20px;
+        background-size: cover;
+        background-position: center;
+    }
+    #banner .box-left {
+        width: 100%;
+        text-align: center;
+    }
+    #banner .box-left h2 {
+        font-size: 24px;
+        /* Giảm kích thước font cho tiêu đề */
+    }
+    #banner .box-left p {
+        font-size: 16px;
+        /* Giảm kích thước font cho đoạn văn */
+    }
+    /* Products */
+    ul.products li {
+        flex-basis: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    ul.products li img {
+        height: auto;
+        max-width: 100%;
+    }
+    /* Footer */
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    #footer .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #footer .box form input {
+        width: 100%;
+    }
+    /* Back to Top Button */
+    #backtop {
+        font-size: 40px;
+        /* Giảm kích thước của nút quay lại đầu trang */
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (min-device-width: 430px) and (max-device-width: 932px) and (orientation: portrait) {
+    /* Header */
+    div.header-top {
+        font-size: 16px;
+        /* Điều chỉnh kích thước font cho header */
+        padding: 10px;
+    }
+    div.header-main {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+    div.header-main div.inner-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    div.header-main div.inner-menu ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    div.header-main div.inner-menu ul li {
+        margin: 5px 0;
+    }
+    /* Slide */
+    .slide {
+        width: 100%;
+        transform: translateX(-100%);
+    }
+    /* Slider */
+    .slider {
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    .slider img {
+        height: auto;
+        width: 100%;
+    }
+    /* Banner */
+    #banner {
+        height: auto;
+        padding: 20px;
+        background-size: cover;
+        background-position: center;
+    }
+    #banner .box-left {
+        width: 100%;
+        text-align: center;
+    }
+    #banner .box-left h2 {
+        font-size: 32px;
+        /* Kích thước font cho tiêu đề trên iPhone 14 Pro Max */
+    }
+    #banner .box-left p {
+        font-size: 18px;
+        /* Kích thước font cho đoạn văn */
+    }
+    /* Products */
+    ul.products li {
+        flex-basis: 48%;
+        /* Căn chỉnh sản phẩm để vừa với màn hình */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    ul.products li img {
+        height: auto;
+        width: 100%;
+    }
+    /* Footer */
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    #footer .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #footer .box form input {
+        width: 100%;
+    }
+    /* Nút Quay Lại Đầu Trang */
+    #backtop {
+        font-size: 45px;
+        /* Kích thước nút trên màn hình lớn hơn */
+        width: 45px;
+        height: 45px;
+    }
+}
