@@ -81,8 +81,3 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(product);
     });
 });
-// const Contacts = document.getElementById("Contacts");
-// Contacts.addEventListener("click", () => {
-//     // window.location.href = "https://haduckientechnology17092005.github.io/Page-contacts/";
-//     window.open('https://haduckientechnology17092005.github.io/Page-contacts/', '_blank');
-// });
