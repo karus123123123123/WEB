@@ -369,38 +369,25 @@ ul.products li .product-top {
     /* phan nam ngoai thi an ,vi phan mua ngay o mep duoi nen an di */
 }
 
-
-/* Hiệu ứng zoom cho ảnh sản phẩm */
-
 .product-thumb img {
     transition: transform 0.3s ease;
-    /* Thay đổi kích thước mượt mà trong 0.6 giây */
     transform-origin: center center;
     /* Đặt điểm gốc của việc phóng to ở giữa ảnh */
 }
 
 .product-thumb:hover img {
     transform: scale(1.1);
-    /* Phóng to ảnh lên 10% khi hover */
 }
-
-
-/* Hiệu ứng xuất hiện từ trái sang phải */
 
 .product-item {
     opacity: 0;
-    /* Ẩn các món ăn khi bắt đầu */
     transform: translateX(-100px);
-    /* Đặt vị trí ban đầu bên trái */
     transition: opacity 0.6s ease, transform 0.6s ease;
-    /* Thay đổi mượt mà */
 }
 
 .product-item.visible {
     opacity: 1;
-    /* Hiển thị các món ăn khi đã xuất hiện */
     transform: translateX(0);
-    /* Đưa các món ăn về vị trí ban đầu */
 }
 
 ul.products li .product-top a.buy-now {
